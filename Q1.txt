@@ -1,0 +1,63 @@
+//------------444002299 غدي عبدالله الحربي-------------------------------------------------
+
+// Java code for linearly search Y in arr[]. If Y
+
+// is present then return its location, otherwise
+
+// return -1
+
+class LinearSearch {
+
+            // This function returns index of element Y in arr[]
+
+            static int search(int arr[], int J, int Y)
+
+            {
+
+                        for (int K = 0; K < J; K++) {
+
+                                // Return the index of the element if the element
+
+                                    // is found
+
+                                    if (arr[K] == Y)
+
+                                                return K;
+
+                        }
+
+ 
+
+                        // return -1 if the element is not found
+
+                        return -1;
+
+            }
+
+ 
+
+            public static void main(String[] args)
+
+            {
+
+                        int[] arr = { 3, 4, 1, 7, 5 };
+
+                        int J = arr.length;
+
+                        int Y = 4;
+
+                        int index = search(arr, J, K);
+
+                        if (index == -1)
+
+                          System.out.println("Element is not present in the array");
+
+                        else
+
+                          System.out.println("Element found at position " + index);
+
+            }
+
+}
+
+//------------------------------------------------------------------------------------------------------
